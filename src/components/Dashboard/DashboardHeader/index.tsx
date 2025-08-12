@@ -4,7 +4,7 @@ import { useSidebar } from "@/components/ui/sidebar";
 import { SearchForm } from "./SearchForm";
 import HeaderAvatar from "./HeaderAvatar";
 import Notification from "./Notification";
-import Logo from "@/assets/svgs/logo.svg?react";
+import Logo from "@/assets/react.svg?react";
 import MessageIcon from "@/assets/svgs/Message square.svg?react";
 import FullscreenIcon from "@/assets/svgs/gridicons_fullscreen-exit.svg?react";
 import { ModeToggle } from "@/components/ThemeToggle";
@@ -20,7 +20,7 @@ export function SiteHeader() {
     <header className="bg-sidebar sticky top-0 z-50 flex w-full items-center border-b-2 border-border">
       <div className="flex h-(--header-height) w-full items-center gap-2 pr-4 md:pr-10">
         <div className="w-[16rem] hidden md:block">
-          <Logo className="size-[5rem] mx-auto" />
+          <Logo className="size-8 mx-auto text-primary" />
         </div>
         <div className="flex items-center gap-2 md:ml-5">
           <Button

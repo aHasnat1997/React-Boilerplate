@@ -79,7 +79,6 @@ export default function DateTimePicker({
           trigger
         ) : (
           <Button
-            variant="filter_button"
             className="focus:ring-0 focus:ring-offset-0 focus:outline-none focus-visible:ring-0"
             onClick={() => {
               console.log("Add customer");
@@ -116,7 +115,6 @@ export default function DateTimePicker({
         <Button
           disabled={!date || !time}
           className="w-full"
-          variant="primary"
           onClick={handleContinue}
         >
           Continue
