@@ -3,7 +3,6 @@ import DashboardLayout from "@/layouts/DashboardLayout";
 import HomeLayout from "@/layouts/HomeLayout";
 import HomePage from "@/pages/Home";
 import DashboardPage from "@/pages/Dashboard";
-import DashboardNotFoundPage from "@/pages/NotFoundPage/DashboardNotFoundPage";
 import OverviewPage from "@/pages/Dashboard/Overview";
 import Bookings from "@/pages/Dashboard/Overview/pages/Bookings";
 import Revenue from "@/pages/Dashboard/Overview/pages/Revenue";
@@ -18,45 +17,31 @@ import Notifications from "@/pages/Dashboard/Notifications";
 import CalendarManagement from "@/pages/Dashboard/CalendarManagement";
 import AllBookings from "@/pages/Dashboard/AllBookings";
 import UnderWorking from "@/pages/Dashboard/UnderWorking";
-import ClientHome from "@/pages/Home/ClientHome";
-import ProviderProfile from "@/pages/Home/ProviderProfile";
-import BookAppoinment from "@/pages/Home/BookAppoinment";
-import MyBookings from "@/pages/Home/MyBookings";
-import Contact from "@/pages/Home/Contact";
 import Reschedule from "@/pages/Dashboard/Reschedule";
 import ClientProfile from "@/pages/Dashboard/ClientProfile";
 import Invoice from "@/pages/Dashboard/Invoice";
 import GetInvoice from "@/pages/Dashboard/GetInvoice";
-import MyProfile from "@/pages/Home/MyProfile";
 import Messages from "@/pages/Dashboard/Messages";
 import ViewProfile from "@/pages/Dashboard/Profile";
 import EditProfile from "@/pages/Dashboard/Profile/EditProfile";
+import NotFoundPage from "@/pages/NotFoundPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout />,
-    errorElement: <DashboardNotFoundPage />,
+    errorElement: <NotFoundPage />,
     children: [
       {
         index: true,
         element: <HomePage />,
       },
-      {
-        path: "/categories",
-        element: <ClientHome />,
-      },
-      { path: "/provider/:id", element: <ProviderProfile /> },
-      { path: "/book_appointment/:id", element: <BookAppoinment /> },
-      { path: "/my_bookings", element: <MyBookings /> },
-      { path: "/contact", element: <Contact /> },
-      { path: "/my_profile", element: <MyProfile /> },
     ],
   },
   {
     path: "/dashboard",
     element: <DashboardLayout />,
-    errorElement: <DashboardNotFoundPage />,
+    errorElement: <NotFoundPage />,
     children: [
       {
         index: true,
