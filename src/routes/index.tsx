@@ -25,6 +25,7 @@ import Messages from "@/pages/Dashboard/Messages";
 import ViewProfile from "@/pages/Dashboard/Profile";
 import EditProfile from "@/pages/Dashboard/Profile/EditProfile";
 import NotFoundPage from "@/pages/NotFoundPage";
+import TablesPage from "@/pages/Dashboard/Tables";
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/edit-profile",
         element: <EditProfile />,
+      },
+      {
+        path: "/dashboard/tables",
+        element: <TablesPage />,
       },
       {
         path: "/dashboard/view-profile",
