@@ -145,8 +145,8 @@ export function DataTableFilter<T>({
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button
-                variant="filter_button"
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 rounded-full"
+                variant="secondary"
               >
                 <ChevronDown className="h-4 w-4" />
                 Column Filter
@@ -178,7 +178,6 @@ export function DataTableFilter<T>({
           </DropdownMenu>
           {showExportButton && (
             <Button
-              variant="filter_button"
               className="hidden rounded-lg lg:flex lg:self-end"
               onClick={onExportClick}
             >
@@ -190,11 +189,7 @@ export function DataTableFilter<T>({
 
       <div className="">
         {showExportButton && (
-          <Button
-            variant="filter_button"
-            className="rounded-lg lg:hidden"
-            onClick={onExportClick}
-          >
+          <Button className="rounded-lg lg:hidden" onClick={onExportClick}>
             {exportButtonText}
           </Button>
         )}
