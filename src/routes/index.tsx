@@ -1,31 +1,31 @@
-import { createBrowserRouter, Navigate } from "react-router";
 import DashboardLayout from "@/layouts/DashboardLayout";
 import HomeLayout from "@/layouts/HomeLayout";
-import HomePage from "@/pages/Home";
 import DashboardPage from "@/pages/Dashboard";
+import AllBookings from "@/pages/Dashboard/AllBookings";
+import BookingHistory from "@/pages/Dashboard/BookingHistory";
+import CalendarManagement from "@/pages/Dashboard/CalendarManagement";
+import ClientProfile from "@/pages/Dashboard/ClientProfile";
+import GetInvoice from "@/pages/Dashboard/GetInvoice";
+import Invoice from "@/pages/Dashboard/Invoice";
+import Messages from "@/pages/Dashboard/Messages";
+import Notifications from "@/pages/Dashboard/Notifications";
 import OverviewPage from "@/pages/Dashboard/Overview";
 import Bookings from "@/pages/Dashboard/Overview/pages/Bookings";
+import Payments from "@/pages/Dashboard/Overview/pages/Payments";
 import Revenue from "@/pages/Dashboard/Overview/pages/Revenue";
 import Reviews from "@/pages/Dashboard/Overview/pages/Reviews";
 import Stats from "@/pages/Dashboard/Overview/pages/Stats";
-import Payments from "@/pages/Dashboard/Overview/pages/Payments";
-import ReleaseServices from "@/pages/Dashboard/Services/ReleaseServices";
-import AddServices from "@/pages/Dashboard/Services/AddServices";
-import BookingHistory from "@/pages/Dashboard/BookingHistory";
 import PaymentHistory from "@/pages/Dashboard/PaymentHistory";
-import Notifications from "@/pages/Dashboard/Notifications";
-import CalendarManagement from "@/pages/Dashboard/CalendarManagement";
-import AllBookings from "@/pages/Dashboard/AllBookings";
-import UnderWorking from "@/pages/Dashboard/UnderWorking";
-import Reschedule from "@/pages/Dashboard/Reschedule";
-import ClientProfile from "@/pages/Dashboard/ClientProfile";
-import Invoice from "@/pages/Dashboard/Invoice";
-import GetInvoice from "@/pages/Dashboard/GetInvoice";
-import Messages from "@/pages/Dashboard/Messages";
 import ViewProfile from "@/pages/Dashboard/Profile";
 import EditProfile from "@/pages/Dashboard/Profile/EditProfile";
-import NotFoundPage from "@/pages/NotFoundPage";
+import Reschedule from "@/pages/Dashboard/Reschedule";
+import AddServices from "@/pages/Dashboard/Services/AddServices";
+import ReleaseServices from "@/pages/Dashboard/Services/ReleaseServices";
 import TablesPage from "@/pages/Dashboard/Tables";
+import UnderWorking from "@/pages/Dashboard/UnderWorking";
+import HomePage from "@/pages/Home";
+import NotFoundPage from "@/pages/NotFoundPage";
+import { createBrowserRouter, Navigate } from "react-router";
 
 const router = createBrowserRouter([
   {
