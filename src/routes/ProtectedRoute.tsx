@@ -1,4 +1,4 @@
-import { useAuth } from "@/hooks/useAuth";
+import useCurrentUser from "@/hooks/useCurrentUser";
 import type { ReactNode } from "react";
 import { Navigate } from "react-router";
 
@@ -15,7 +15,7 @@ export const ProtectedRoute = ({
   redirectTo = "/login",
   roles,
 }: ProtectedRouteProps) => {
-  const userData = useAuth();
+  const userData = useCurrentUser();
 
   if (!userData?.id) {
     return <Navigate to={redirectTo} replace />;
